@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "sources": [
+      "../common/models",
+      "../common/sumi",
+      "../common/stock"
+    ]
+  },
+  "User": {
+    "dataSource": "mongodb",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "mongodb",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "mongodb",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mongodb",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "mongodb",
+    "public": false
+  },
+  "Email": {
+    "dataSource": "email",
+    "public": false
+  },
+  "user": {
+    "dataSource": "mongodb",
+    "public": true,
+    "options": {
+      "emailVerificationRequired": true
+    }
+  },
+  "sumi": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "sumiFakeBJ": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "sumiHistory": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "stock": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "stockTrack": {
+    "dataSource": "mongodb",
+    "public": true
+  }
+}

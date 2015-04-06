@@ -1,0 +1,54 @@
+{
+  "name": "sumiHistory",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "strict": true,
+  "properties": {
+    "date": {
+      "type": "String",
+      "required": true
+    },
+    "tjx": {
+      "type": "String",
+      "required": true
+    },
+    "ljbj": {
+      "type": "Number",
+      "required": true
+    },
+    "ljshyk": {
+      "type": "Number",
+      "required": true
+    },
+    "ljshykl": {
+      "type": "Number",
+      "required": true
+    },
+    "cccb": {
+      "type": "Number",
+      "required": true
+    },
+    "ccyk": {
+      "type": "Number",
+      "required": true
+    },
+    "ccykl": {
+      "type": "Number",
+      "required": true
+    },
+    "sz": {
+      "type": "Number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "sumi": {
+      "type": "belongsTo",
+      "model": "sumi",
+      "foreignKey": "ownerId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}

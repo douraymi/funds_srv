@@ -1,0 +1,50 @@
+{
+  "name": "sumiFakeBJ",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "strict": true,
+  "properties": {
+    "date": {
+      "type": "String",
+      "required": true
+    },
+    "shiZhi": {
+      "type": "Number",
+      "required": true
+    },
+    "fakeYingKui": {
+      "type": "Number",
+      "required": true
+    },
+    "fakeYKCost": {
+      "type": "Number",
+      "required": true
+    },
+    "leiJiBenJin": {
+      "type": "Number",
+      "required": true
+    },
+    "leiJiShuHui": {
+      "type": "Number",
+      "required": true
+    },
+    "ziJinChengBen": {
+      "type": "Array",
+      "required": true
+    },
+    "fakeBenJin": {
+      "type": "Array",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "sumi": {
+      "type": "belongsTo",
+      "model": "sumi",
+      "foreignKey": "ownerId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}

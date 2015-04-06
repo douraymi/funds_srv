@@ -1,0 +1,35 @@
+{
+  "name": "job",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "date": {
+      "type": "Date",
+      "required": true
+    }
+    },
+  "validations": [],
+  "relations": {
+    "userTest": {
+      "type": "belongsTo",
+      "model": "userTest",
+      "foreignKey": "ownerId"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": "dada"
+    }
+  ],
+  "methods": []
+}

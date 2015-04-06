@@ -1,0 +1,14 @@
+<div class="masthead clearfix">
+  <div class="inner">
+    <h3 class="masthead-brand">{{greeting}}</h3>
+    <ul class="nav masthead-nav">
+      <li ui-sref-active="active"><a ui-sref="home">Home</a></li>
+      <li ui-sref-active="active"><a ui-sref="sumi">sumi</a></li>
+      <li ui-sref-active="active"><a ui-sref="stock">stock</a></li>
+      <li ui-sref-active="active" ng-hide="$isLogin"><a ui-sref="sign">SignIn</a></li>
+      <li ui-sref-active="active" ng-hide="$isLogin"><a ui-sref="login">LogIn</a></li>
+      <li ng-hide="!$isLogin"><a href="#" ng-click="logout()">Logout</a></li>
+      <li ui-sref-active="active"><a ui-sref="about">About</a></li>
+    </ul>
+  </div>
+</div>

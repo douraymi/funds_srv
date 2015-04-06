@@ -1,2 +1,4 @@
-# girafeee_srv
-girafeee server
+girafeee
+================
+
+server & client for girafeee

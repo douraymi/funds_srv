@@ -1,0 +1,42 @@
+{
+  "name": "stockTrack",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "strict": false,
+  "properties": {
+    "stockName": {
+      "type": "String",
+      "required": true
+    },
+    "stockCode": {
+      "type": "String",
+      "required": true
+    },
+    "startDate": {
+      "type": "String",
+      "required": true
+    },
+    "isEnd": {
+      "type": "Boolean",
+      "required": true
+    },
+    "beginPrice": {
+      "type": "Number",
+      "required": true
+    },
+    "memo": {
+      "type": "String",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "stock": {
+      "type": "belongsTo",
+      "model": "stock",
+      "foreignKey": "ownerId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}

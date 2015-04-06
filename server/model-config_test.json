@@ -1,0 +1,35 @@
+{
+  "_meta": {
+    "sources": [
+      "./modelsTest"
+    ]
+  },
+  "User": {
+    "dataSource": "memorydb",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "memorydb",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "memorydb",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "memorydb",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "memorydb",
+    "public": false
+  },
+  "job": {
+    "dataSource": "memorydb",
+    "public": true
+  },
+  "userTest": {
+    "dataSource": "memorydb",
+    "public": true
+  }
+}

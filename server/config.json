@@ -1,0 +1,6 @@
+{
+  "restApiRoot": "/zapiz",
+  "host": "0.0.0.0",
+  "port": 26668,
+  "cookieSecret": "c7218add-3314-478e-9f49-197e56e7b4c4"
+}

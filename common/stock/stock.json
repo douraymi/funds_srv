@@ -1,0 +1,64 @@
+{
+  "name": "stock",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "strict": true,
+  "properties": {
+    "groupName": {
+      "type": "String",
+      "required": true
+    },
+    "type": {
+      "type": "String",
+      "required": true
+    },
+    "tarckSetting": {
+      "type": "Array",
+      "required": false
+    },
+    "sortTime": {
+      "type": "Date",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "user": {
+      "type": "belongsTo",
+      "model": "user",
+      "foreignKey": "ownerId"
+    },
+    "stockTracks": {
+      "type": "hasMany",
+      "model": "stockTrack",
+      "foreignKey": "ownerId"
+    }
+  },
+  "acls": [
+    {
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW",
+      "property": "__get__stockTracks"
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW",
+      "property": "__create__stockTracks"
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW",
+      "property": "__count__stockTracks"
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW",
+      "property": "__destroyById__stockTracks"
+    }
+  ],
+  "methods": []
+}

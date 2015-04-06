@@ -1,0 +1,40 @@
+<div class="">
+	<div class="row">
+		<div>
+			<h1>add stock track group</h1><br>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-1"></div>
+		<div class="col-xs-10">
+		<div class="row">
+		<form ng-submit="add()" class="form-horizontal" role="form">
+			<div class="col-xs-6 text-left">
+			  <div class="form-group">
+			    <label for="inputTRG" class="col-sm-4 control-label">分组名字</label>
+			    <div class="col-sm-8">
+			      <input type="text" ng-model="groupName" name="groupName" class="form-control" id="inputTRG" placeholder="stock track list name">
+			    </div>
+			  </div>
+			</div>
+			<div class="col-xs-6 text-left">
+			  <div class="form-group">
+			    <label for="iptts" class="col-sm-4 control-label">track set</label>
+			    <div class="col-sm-8">
+			      <input type="text" ng-model="iptts" name="iptts" class="form-control" id="iptts" placeholder="iptts">
+			    </div>
+			    <span>以空格分隔</span>
+			  </div>
+
+			  <div class="form-group">
+			    <div class="col-sm-offset-2 col-sm-10">
+			      <button type="submit" class="btn btn-default">ADD</button>
+			    </div>
+			  </div>
+			</div>
+		</form>
+		</div>
+		</div>
+		<div class="col-xs-1"></div>
+  </div>
+</div>
